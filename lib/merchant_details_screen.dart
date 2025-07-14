@@ -24,20 +24,12 @@ class MerchantDetailsScreen extends StatelessWidget {
               child: Image.network(product.image, height: 200),
             ),
             const SizedBox(height: 16),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  product.title,
-                  style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(backgroundColor: Color(0xFFC84771)),
-                  child: const Text("Directions"),
-                ),
-              ],
+            // Wrap title and price in a Row
+            Text(
+              product.title,
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
+
             Text("address", style: TextStyle(color: Colors.grey[600])),
             const SizedBox(height: 8),
             Text(product.description),
