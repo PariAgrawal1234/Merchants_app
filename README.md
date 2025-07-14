@@ -55,7 +55,6 @@ This app was intended to use the Google Places API to fetch real-time merchants 
 
 1. **Clone the repo**:
    ```bash
-   git clone https://github.com/your-username/merchants-app.git
-   cd merchants-app
+   gh repo clone PariAgrawal1234/Merchants_app
 
 
